@@ -1,0 +1,38 @@
+﻿<div id="body" class="help-page">
+    <section class="featured">
+        <div class="content-wrapper">
+            <h2>Donate Kart APIs Task</h2>
+            <p>
+                Click on link Provided to see data returned from API
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>End Point Name</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>List of Campaigns</td>
+                    <td>Fetch Data from API and Sort the data by Amount and returns Title, Total Amount, Backers Date, End Date</td>
+                    <td><a href="@Url.Action("ListAllCampaigns" ,"api/Campaign")" class="btn-link">Get api/Campaign/ListAllCampaigns</a></td>
+                </tr>
+                <tr>
+                    <td>List of Active Campaigns</td>
+                    <td>Returns all active Campaigns from last one month</td>
+                    <td><a href="@Url.Action("ActiveCampaigns" ,"api/Campaign")" class="btn-link">Get api/Campaign/ActiveCampaigns</a></td>
+                </tr>
+                <tr>
+                    <td>List of Closed Campaigns</td>
+                    <td>Returns all closed Campaigns from last one month</td>
+                    <td><a href="@Url.Action("ClosedCampaigns" ,"api/Campaign")" class="btn-link">Get api/Campaign/ClosedCampaigns</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</div>
